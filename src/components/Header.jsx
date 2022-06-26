@@ -97,9 +97,9 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="py-10 top-0 left-0 z-50 text-sm sticky ">
       <Container>
-        <nav className="relative z-50 text-sm">
+        <nav className="">
           <ul className="flex items-center">
             <li>
               <Link href="#">

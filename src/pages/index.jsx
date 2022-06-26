@@ -21,7 +21,7 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <main>
+      <main className="bg-neutral-100">
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
