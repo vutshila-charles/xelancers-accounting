@@ -12,27 +12,27 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Accounting Services',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "Small business accounting services that meet your current needs.",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Tax Services',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "You can be confidennt that your taxes will be prepared properly annd filed on time.",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Booking Services',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "We offer the reliable bookkeeping services to keep your business on track financially.",
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'QuickBooks Services',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'We offer a free initial consultation to individuals and businesses',
     image: screenshotReporting,
   },
 ]
@@ -77,7 +77,7 @@ export function PrimaryFeatures() {
             id="features-title"
             className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl"
           >
-            Everything you need to run your books.
+            Accounting annd Bookkeepinng Services.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
             Well everything you need if you aren’t that picky about minor

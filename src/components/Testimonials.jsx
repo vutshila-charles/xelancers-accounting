@@ -11,19 +11,19 @@ const testimonials = [
   [
     {
       content:
-        'Xelancers is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        'The relationship is more on a personal level than just business because Xelancers chooses to get to know their clients/business on a personal level. Like Ntsako would say "coffee first...then rest shall follow". Love everything about it..',
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: 'Rita Nkuna',
+        role: 'CEO at RN Billion',
         image: avatarImage1,
       },
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+        'They educate you about your taxes. You are able to keep track of everything they do on a daily basis because Xelancers gives you access to their system logins. That gives me a peace of mind knowing things are getting done.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'Rita Nkuna',
+        role: 'CEO at RN Billion',
         image: avatarImage4,
       },
     },
@@ -83,11 +83,11 @@ export function Testimonials() {
             id="testimonials-title"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
           >
-            Loved by businesses worldwide.
+            Trusted by businesses.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
+            We are so simple to work with that people can’t help but fall in love
+            with our services. Simplicity is easy when you just skip tons of
             mission-critical features.
           </p>
         </div>

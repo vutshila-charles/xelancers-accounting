@@ -4,16 +4,16 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import screenshotContacts from '@/images/screenshots/simplepay.png'
+import screenshotInventory from '@/images/screenshots/xero.jpeg'
+import screenshotProfitLoss from '@/images/screenshots/hubdoc.jpeg'
 
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'HubDoc',
+    summary: "Remember the importance of keeping reciepts and not having to lose them ? Well that's not a thing anymore.",
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      "Hubdoc has changed the game with just a simple snap of a picture! Hubdoc offers document collection and management software which collects and analyses business documents for financial reporting, recons and audit proofing.",
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -44,11 +44,11 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Xero',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'A cloud based accounting software  for small and medium size businesses .',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      'Finalize tax reports, do daily reconcilliation, prepare balance sheet and profit & loss.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -72,11 +72,11 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Simple Pay',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Provide cloude based payroll software solutions.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'A list of employees your company has that are entitled to receiving payments as well as other benefits on a weekly or monthly basis depending onn the contract signed between the employee and the company.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -221,7 +221,7 @@ export function SecondaryFeatures() {
             id="secondary-features-title"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
           >
-            Simplify everyday business tasks.
+            Some of the services we use
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Because you’d probably be a little confused if we suggested you

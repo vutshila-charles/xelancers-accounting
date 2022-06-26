@@ -103,9 +103,10 @@ export function Header() {
           <ul className="flex items-center">
             <li>
               <Link href="#">
-                <a>
+                <a className="text-blue-600 font-extrabold">
                   <span className="sr-only">Home</span>
-                  <Logo className="h-10 w-auto" />
+                  {/* <Logo className="h-10 w-auto" /> */}
+                  XeLancers
                 </a>
               </Link>
             </li>

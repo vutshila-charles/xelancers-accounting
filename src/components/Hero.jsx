@@ -28,8 +28,7 @@ export function Hero() {
         for small businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Most bookkeeping software is accurate, but hard to use. We make the
-        opposite trade-off, and hope you don’t get audited.
+        We are professionals, experienced, and affordable. We offer a broad range of services for business owners, executives, and indepedendent professionals
       </p>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="/register">Get 6 months free</ButtonLink>
@@ -48,25 +47,25 @@ export function Hero() {
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
-          Trusted by these six companies so far
+          Trusted by these companies so far
         </p>
         <ul className="mt-8 flex items-center justify-center space-x-8 sm:flex-col sm:space-x-0 sm:space-y-10 xl:flex-row xl:space-y-0 xl:space-x-12">
           <li>
             <ul className="flex flex-col items-center space-y-8 sm:flex-row sm:space-y-0 sm:space-x-12">
               <li className="flex">
                 <Image
-                  src={logoTransistor}
+                  src={logoLaravel}
                   alt="Transistor"
                   layout="fixed"
                   unoptimized
                 />
               </li>
               <li className="flex">
-                <Image src={logoTuple} alt="Tuple" layout="fixed" unoptimized />
+                <Image src={logoLaravel} alt="Tuple" layout="fixed" unoptimized />
               </li>
               <li className="flex">
                 <Image
-                  src={logoStaticKit}
+                  src={logoLaravel}
                   alt="StaticKit"
                   layout="fixed"
                   unoptimized
@@ -78,7 +77,7 @@ export function Hero() {
             <ul className="flex flex-col items-center space-y-8 sm:flex-row sm:space-y-0 sm:space-x-12">
               <li className="flex">
                 <Image
-                  src={logoMirage}
+                  src={logoLaravel}
                   alt="Mirage"
                   layout="fixed"
                   unoptimized
@@ -94,7 +93,7 @@ export function Hero() {
               </li>
               <li className="flex">
                 <Image
-                  src={logoStatamic}
+                  src={logoLaravel}
                   alt="Statamic"
                   layout="fixed"
                   unoptimized
