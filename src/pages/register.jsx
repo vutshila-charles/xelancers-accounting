@@ -9,7 +9,7 @@ export default function Login() {
   return (
     <>
       <Head>
-        <title>Sign Up - TaxPal</title>
+        <title>Sign Up - Xelancers</title>
       </Head>
       <AuthLayout>
         <div className="flex flex-col items-start justify-start">

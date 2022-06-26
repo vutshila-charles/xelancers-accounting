@@ -39,7 +39,7 @@ export function Footer() {
           <div className="flex space-x-6">
             <Link href="#">
               <a className="group">
-                <span className="sr-only">TaxPal on Twitter</span>
+                <span className="sr-only">Xelancers on Twitter</span>
                 <svg
                   aria-hidden="true"
                   className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
@@ -50,7 +50,7 @@ export function Footer() {
             </Link>
             <Link href="#">
               <a className="group">
-                <span className="sr-only">TaxPal on GitHub</span>
+                <span className="sr-only">Xelancers on GitHub</span>
                 <svg
                   aria-hidden="true"
                   className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
@@ -61,7 +61,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
+            Copyright &copy; {new Date().getFullYear()} Xelancers. All rights
             reserved.
           </p>
         </div>
