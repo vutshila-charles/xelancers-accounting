@@ -20,7 +20,7 @@ const features = [
   {
     title: 'Claim expenses',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "All of your receipt organized into one place, as long as you don't mind typing in the data by hand.",
     image: screenshotExpenses,
   },
   {
