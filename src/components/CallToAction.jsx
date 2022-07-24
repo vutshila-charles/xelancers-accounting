@@ -26,7 +26,7 @@ export function CallToAction() {
             Contact Us Today!
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            <a href="tel:081 800 7204">123-456-7890</a>
+            <a href="tel:081 800 7204">081 800 7204</a>
           </p>
           <ButtonLink href="mailto:nkunantsako396@gmail.com" color="white" className="mt-10">
             Get In Touch
