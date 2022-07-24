@@ -26,8 +26,8 @@ export  function OurSystems() {
           <div className="grid grid-cols-1 mt-16 gap-y-16 lg:grid-cols-3 lg:gap-x-8">
           <div className="bg-white rounded-md shadow-2xl">
               <div className="w-full overflow-hidden rounded-lg aspect-w-3 aspect-h-2">
-                <img
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg"
+                <Image
+                  src={screenshotContacts}
                   alt="Drawstring top with elastic loop closure and textured interior padding."
                   className="object-cover object-center w-full h-full"
                 />
@@ -40,8 +40,8 @@ export  function OurSystems() {
             </div>
             <div className="bg-white rounded-md shadow-2xl">
               <div className="w-full overflow-hidden rounded-lg aspect-w-3 aspect-h-2">
-                <img
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-02.jpg"
+                <Image
+                  src={screenshotInventory}
                   alt="Front zipper pouch with included key ring."
                   className="object-cover object-center w-full h-full"
                 />
@@ -53,8 +53,8 @@ export  function OurSystems() {
             </div>
             <div className="bg-white rounded-md shadow-2xl">
               <div className="w-full overflow-hidden rounded-lg aspect-w-3 aspect-h-2">
-                <img
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-02.jpg"
+                <Image
+                  src={screenshotProfitLoss}
                   alt="Front zipper pouch with included key ring."
                   className="object-cover object-center w-full h-full"
                 />
