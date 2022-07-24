@@ -9,25 +9,26 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
-
+import { OurSystems } from '@/components/OurSystems'
+import { render } from "react-dom";
 export default function Home() {
   return (
     <>
       <Head>
-        <title>TaxPal - Accounting made simple for small businesses</title>
+        <title>Xelancers - Accounting made simple for small businesses</title>
         <meta
           name="description"
           content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
         />
       </Head>
       <Header />
-      <main>
+      <main className="bg-neutral-100">
         <Hero />
-        <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction />
         <Testimonials />
-        <Pricing />
+        <PrimaryFeatures />
+        <OurSystems />
+        <CallToAction />
         <Faqs />
       </main>
       <Footer />
