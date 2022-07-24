@@ -9,7 +9,8 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
-
+import { OurSystems } from '@/components/OurSystems'
+import { render } from "react-dom";
 export default function Home() {
   return (
     <>
@@ -23,11 +24,11 @@ export default function Home() {
       <Header />
       <main className="bg-neutral-100">
         <Hero />
-        <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction />
         <Testimonials />
-        {/* <Pricing /> */}
+        <PrimaryFeatures />
+        <OurSystems />
+        <CallToAction />
         <Faqs />
       </main>
       <Footer />

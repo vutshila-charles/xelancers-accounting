@@ -58,7 +58,7 @@ function MobileNavigation() {
             >
               <Popover.Panel
                 as="ul"
-                className="absolute inset-x-0 top-full mt-4 origin-top space-y-4 rounded-2xl bg-white p-6 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
+                className="absolute inset-x-0 p-6 mt-4 space-y-4 text-lg tracking-tight origin-top bg-white shadow-xl top-full rounded-2xl text-slate-900 ring-1 ring-slate-900/5"
               >
                 <li>
                   <Link href="#features">
@@ -81,8 +81,8 @@ function MobileNavigation() {
                     </a>
                   </Link>
                 </li>
-                <li className="border-t border-slate-300/40 pt-4">
-                  <Link href="/login">
+                <li className="pt-4 border-t border-slate-300/40">
+                  <Link  href="mailto:nkunantsako396@gmail.com">
                     <a className="block w-full">Sign in</a>
                   </Link>
                 </li>
@@ -97,49 +97,49 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10 top-0 left-0 z-50 text-sm sticky ">
+    <header className="sticky top-0 left-0 z-50 py-10 text-sm ">
       <Container>
         <nav className="">
           <ul className="flex items-center">
             <li>
               <Link href="#">
-                <a className="text-blue-600 font-extrabold">
+                <a className="font-extrabold text-blue-600">
                   <span className="sr-only">Home</span>
-                  {/* <Logo className="h-10 w-auto" /> */}
+                  {/* <Logo className="w-auto h-10" /> */}
                   XeLancers
                 </a>
               </Link>
             </li>
-            <li className="ml-12 hidden md:block">
+            <li className="hidden ml-12 md:block">
               <Link href="#features">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                   Features
                 </a>
               </Link>
             </li>
-            <li className="ml-6 hidden md:block">
+            <li className="hidden ml-6 md:block">
               <Link href="#testimonials">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                   Testimonials
                 </a>
               </Link>
             </li>
-            <li className="ml-6 hidden md:block">
+            <li className="hidden ml-6 md:block">
               <Link href="#pricing">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                   Pricing
                 </a>
               </Link>
             </li>
-            <li className="ml-auto hidden md:block">
+            <li className="hidden ml-auto md:block">
               <Link href="/login">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                   Sign in
                 </a>
               </Link>
             </li>
             <li className="ml-auto md:ml-8">
-              <ButtonLink href="/register" color="blue">
+              <ButtonLink href="mailto:nkunantsako396@gmail.com" color="blue">
                 <span>
                   Get started<span className="hidden lg:inline"> today</span>
                 </span>

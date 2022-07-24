@@ -8,7 +8,7 @@ export function CallToAction() {
   return (
     <section
       id="get-started-today"
-      className="relative overflow-hidden bg-blue-600 py-32"
+      className="relative py-32 overflow-hidden bg-blue-600"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
         <Image
@@ -21,16 +21,15 @@ export function CallToAction() {
         />
       </div>
       <Container className="relative">
-        <div className="mx-auto max-w-lg text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Get started today
+        <div className="max-w-lg mx-auto text-center">
+          <h2 className="text-3xl tracking-tight text-white font-display sm:text-4xl">
+            Contact Us Today!
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to take control of your books. Contact us so you can
-            feel like you’re doing something productive.
+            <a href="tel:081 800 7204">123-456-7890</a>
           </p>
-          <ButtonLink href="/register" color="white" className="mt-10">
-            Get 6 months free
+          <ButtonLink href="mailto:nkunantsako396@gmail.com" color="white" className="mt-10">
+            Get In Touch
           </ButtonLink>
         </div>
       </Container>

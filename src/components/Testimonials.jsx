@@ -6,6 +6,7 @@ import avatarImage2 from '@/images/avatars/avatar-2.png'
 import avatarImage3 from '@/images/avatars/avatar-3.png'
 import avatarImage4 from '@/images/avatars/avatar-4.png'
 import avatarImage5 from '@/images/avatars/avatar-5.png'
+import { ButtonLink } from '@/components/Button'
 
 const testimonials = [
   [
@@ -13,8 +14,8 @@ const testimonials = [
       content:
         'The relationship is more on a personal level than just business because Xelancers chooses to get to know their clients/business on a personal level. Like Ntsako would say "coffee first...then rest shall follow". Love everything about it..',
       author: {
-        name: 'Rita Nkuna',
-        role: 'CEO at RN Billion',
+        name: 'CEO ',
+        role: 'at RN Billion',
         image: avatarImage1,
       },
     },
@@ -22,8 +23,8 @@ const testimonials = [
       content:
         'They educate you about your taxes. You are able to keep track of everything they do on a daily basis because Xelancers gives you access to their system logins. That gives me a peace of mind knowing things are getting done.',
       author: {
-        name: 'Rita Nkuna',
-        role: 'CEO at RN Billion',
+        name: 'CEO',
+        role: 'at RN Billion',
         image: avatarImage4,
       },
     },
@@ -75,15 +76,15 @@ export function Testimonials() {
     <section
       id="testimonials"
       aria-labelledby="testimonials-title"
-      className="bg-slate-50 py-20 sm:py-32"
+      className="py-20 bg-gray-100 sm:py-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <h2
             id="testimonials-title"
-            className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+            className="text-3xl tracking-tight font-display text-slate-900 sm:text-4xl"
           >
-            Trusted by businesses.
+            Why XeLancers?
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             We are so simple to work with that people can’t help but fall in love
@@ -91,47 +92,22 @@ export function Testimonials() {
             mission-critical features.
           </p>
         </div>
-        <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
-          {testimonials.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul className="space-y-6 sm:space-y-8">
-                {column.map((testimonial, testimonialIndex) => (
-                  <li key={testimonialIndex}>
-                    <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
-                      <svg
-                        aria-hidden="true"
-                        width={105}
-                        height={78}
-                        className="absolute top-6 left-6 fill-slate-100"
-                      >
-                        <path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z" />
-                      </svg>
-                      <blockquote className="relative">
-                        <p className="text-lg tracking-tight text-slate-900">
-                          {testimonial.content}
-                        </p>
-                      </blockquote>
-                      <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                        <div>
-                          <div className="font-display text-base text-slate-900">
-                            {testimonial.author.name}
-                          </div>
-                          <div className="mt-1 text-sm text-slate-500">
-                            {testimonial.author.role}
-                          </div>
-                        </div>
-                        <div className="h-14 w-14 overflow-hidden rounded-full bg-slate-50">
-                          <Image src={testimonial.author.image} alt="" />
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </Container>
+        <div className="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-2">
+          <div className="px-4 py-8 bg-white rounded-md">
+                  Every individual and business has different accounting needs, and we are here for any and every financial
+                  challenge you may face. XeLancers is ready to serve as a voice of reason for your tax planning and financial advising demands. We want to help you make the best decisions possible.
+                  Our personalized accounting services and solutions have helped our clients manage a better financial future.
+          </div>
+          <div className="px-4 py-8 bg-white rounded-md">
+          You got into business to do more of what you love and if keeping your books isn’t it, no problem! We reconcile your books weekly so you can spend more time doing the things you love, and less time on the things you don’t.
+          </div>
+        </div>
+        </Container>
+        <div className="max-w-lg mx-auto text-center">
+          <ButtonLink href="mailto:nkunantsako396@gmail.com" color="blue" className="mt-10">
+              Get In Touch
+          </ButtonLink>
+        </div>
     </section>
   )
 }

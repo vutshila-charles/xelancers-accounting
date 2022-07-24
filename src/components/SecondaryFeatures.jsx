@@ -7,6 +7,8 @@ import { Container } from '@/components/Container'
 import screenshotContacts from '@/images/screenshots/simplepay.png'
 import screenshotInventory from '@/images/screenshots/xero.jpeg'
 import screenshotProfitLoss from '@/images/screenshots/hubdoc.jpeg'
+import ntsako from '@/images/hero.png'
+import { ButtonLink } from '@/components/Button'
 
 const features = [
   {
@@ -120,7 +122,7 @@ function Feature({ feature, isActive, className, ...props }) {
       >
         {feature.name}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
+      <p className="mt-2 text-xl font-display text-slate-900">
         {feature.summary}
       </p>
       <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
@@ -130,12 +132,12 @@ function Feature({ feature, isActive, className, ...props }) {
 
 function FeaturesMobile() {
   return (
-    <div className="-mx-4 mt-20 space-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
+    <div className="px-4 mt-20 -mx-4 space-y-10 overflow-hidden sm:-mx-6 sm:px-6 lg:hidden">
       {features.map((feature) => (
         <div key={feature.name}>
-          <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
-          <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
+          <Feature feature={feature} className="max-w-2xl mx-auto" isActive />
+          <div className="relative pb-10 mt-10">
+            <div className="absolute bottom-0 -inset-x-4 top-8 bg-slate-200 sm:-inset-x-6" />
             <div className="relative mx-auto aspect-[844/428] w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
               <Image
                 src={feature.image}
@@ -174,8 +176,8 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
-            <div className="-mx-5 flex">
+          <Tab.Panels className="relative py-16 mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 xl:px-16">
+            <div className="flex -mx-5">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
                   static
@@ -200,7 +202,7 @@ function FeaturesDesktop() {
                 </Tab.Panel>
               ))}
             </div>
-            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
+            <div className="absolute inset-0 pointer-events-none rounded-4xl ring-1 ring-inset ring-slate-900/10" />
           </Tab.Panels>
         </>
       )}
@@ -213,24 +215,52 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-labelledby="secondary-features-title"
-      className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pt-20 bg-blue-600 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <h2
             id="secondary-features-title"
-            className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+            className="text-3xl tracking-tight font-display text-slate-50 sm:text-4xl"
           >
-            Some of the services we use
+            Ntsako Nkuna
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          <p className="mt-4 text-lg tracking-tight text-slate-50">
             Because you’d probably be a little confused if we suggested you
             complicate your everyday business tasks instead.
           </p>
         </div>
-        <FeaturesMobile />
-        <FeaturesDesktop />
+        <div className="w-full mt-6 lg:flex ">
+            <div className='hidden lg:block'>
+            <Image
+                  src={ntsako}
+                  alt="StaticKit"
+                  layout="fixed"
+                  unoptimized
+                  className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
+                />
+            </div>
+            <div className='items-center py-20 bg-white rounded-md lg:py-0'>
+              <div className='relative px-2 my-0 lg:top-36 sm:my-6'>
+              <p > 
+                Ntsako Nkuna is the founder of XeLancers and has been handling personalized 
+                financial consulting and tax accounting services for small start-ups and medium-sized entities. 
+              </p>
+              <p className='mt-5'> 
+                Being a Bookkeeping consultant has kept me on my feet because there is always something 
+                new to learn about my clients and their culture,
+                whether it's on a temporary or permanent basis, I keep the relationship with my clients going.
+              </p>
+              </div>
+               
+            </div>
+        </div>
       </Container>
+      <div className="max-w-lg mx-auto text-center">
+          <ButtonLink href="mailto:nkunantsako396@gmail.com" color="white" className="mt-10">
+              Get In Touch
+          </ButtonLink>
+        </div>
     </section>
   )
 }
